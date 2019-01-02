@@ -4,7 +4,7 @@ runtime:
   nodePool: dynamic__x86_64__CentOS_7__c4_large
    
 services:
-  - couchdb #2.1.1
+  #- couchdb #2.1.1
   - elasticsearch #6.1.1
   - memcached #1.5.4
   - libmemcached #1.0.18
