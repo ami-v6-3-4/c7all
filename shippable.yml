@@ -4,22 +4,24 @@ runtime:
   nodePool: dynamic__x86_64__CentOS_7__c4_large
    
 services:
-  - couchdb #2.2.0
-  - elasticsearch #6.4.3
-  - memcached #1.5.12
-  - mongodb #4.0.3
-  - mysql #5.7.24
-  - postgres #10.6
-  - rabbitmq #3.6.15
-  - redis  #5.0.0
+  - couchdb #2.1.1
+  - elasticsearch #6.1.1
+  - memcached #1.5.4
+  - libmemcached #1.0.18
+  - neo4j #3.3.1
+  - mongodb #3.6.2
+  - mysql #5.7.21
+  - postgres #10.2
+  - rabbitmq #19.0.4
+  - redis  #4.0.8
   - riak #2.2.3
-  - selenium #3.141.5
+  - selenium #3.8.1
   - sqlite #3.22.0
- 
+
 build:
   pre_ci_boot:
     image_name: drydock/c7all
-    image_tag: master
+    image_tag: v6.3.4
     pull: true
     
   ci:
