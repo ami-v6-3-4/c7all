@@ -16,7 +16,7 @@ services:
   - sqlite #3.22.0
   #- mysql #5.7.21
   #- postgres #10.2
-  - couchdb #2.1.1
+  #- couchdb #2.1.1
 
 build:
   pre_ci_boot:
