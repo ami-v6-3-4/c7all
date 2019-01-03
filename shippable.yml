@@ -15,8 +15,8 @@ services:
   - riak #2.2.3
   - selenium #3.8.1
   - sqlite #3.22.0
-  #- mysql #5.7.21
-  - postgres #10.2
+  - mysql #5.7.21
+  #- postgres #10.2
   - couchdb #2.1.1
 
 build:
