@@ -4,19 +4,20 @@ runtime:
   nodePool: dynamic__x86_64__CentOS_7__c4_large
    
 services:
-  #- couchdb #2.1.1
-  - elasticsearch #6.1.1
-  - memcached #1.5.4
-  - libmemcached #1.0.18
-  - neo4j #3.3.1
-  - mongodb #3.6.2
-#  - mysql #5.7.21
- # - postgres #10.2
-  - rabbitmq #19.0.4
-  - redis  #4.0.8
-  - riak #2.2.3
-  - selenium #3.8.1
-  - sqlite #3.22.0
+  - Cassandra #3.11.2
+  - MemCached #1.5.4
+  - LibMemCached #1.0.18
+  - Mongodb #3.6.2
+  - Neo4j #3.3.1
+  - RabbitMQ #19.0.4
+  - Redis-server #4.0.8
+  - ElasticSearch #6.1.1
+  - Riak #2.2.3
+  - Selenium #3.8.1
+  - Sqlite #3.22.0
+  - mysql #5.7.21
+  - postgres #10.2
+  - couchdb #2.1.1
 
 build:
   pre_ci_boot:
@@ -50,8 +51,8 @@ build:
     - mongod --version
     - elasticsearch --version
     - sleep 5
-    #- curl http://127.0.0.1:5984
-    
+    - curl http://127.0.0.1:5984
+    - pip show pycrypto    
     - docker pull shippabledocker/sample_node_pvt:ecr
     
 integrations:
