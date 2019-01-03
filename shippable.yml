@@ -5,12 +5,12 @@ runtime:
    
 services:
   - cassandra #3.11.2
-  - memCached #1.5.4
+  - memcached #1.5.4
   - libmemcached #1.0.18
   - mongodb #3.6.2
   - neo4j #3.3.1
-  - rabbitMQ #19.0.4
-  - redis-server #4.0.8
+  - rabbitmq #19.0.4
+  - redis #4.0.8
   - elasticsearch #6.1.1
   - riak #2.2.3
   - selenium #3.8.1
