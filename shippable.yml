@@ -11,7 +11,7 @@ services:
   - neo4j #3.3.1
   - mongodb #3.6.2
 #  - mysql #5.7.21
-  - postgres #10.2
+ # - postgres #10.2
   - rabbitmq #19.0.4
   - redis  #4.0.8
   - riak #2.2.3
