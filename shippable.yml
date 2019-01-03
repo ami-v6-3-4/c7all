@@ -4,17 +4,17 @@ runtime:
   nodePool: dynamic__x86_64__CentOS_7__c4_large
    
 services:
-  - Cassandra #3.11.2
-  - MemCached #1.5.4
-  - LibMemCached #1.0.18
-  - Mongodb #3.6.2
-  - Neo4j #3.3.1
-  - RabbitMQ #19.0.4
-  - Redis-server #4.0.8
-  - ElasticSearch #6.1.1
-  - Riak #2.2.3
-  - Selenium #3.8.1
-  - Sqlite #3.22.0
+  - cassandra #3.11.2
+  - memCached #1.5.4
+  - libmemcached #1.0.18
+  - mongodb #3.6.2
+  - neo4j #3.3.1
+  - rabbitMQ #19.0.4
+  - redis-server #4.0.8
+  - elasticsearch #6.1.1
+  - riak #2.2.3
+  - selenium #3.8.1
+  - sqlite #3.22.0
   - mysql #5.7.21
   - postgres #10.2
   - couchdb #2.1.1
